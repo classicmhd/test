@@ -13,6 +13,6 @@
   document.getElementById('enquiry').addEventListener('submit',function(e){
     e.preventDefault();var d=new FormData(e.target),g=function(k){return d.get(k)||''};
     var body='Name: '+g('name')+'\nCompany: '+g('company')+'\nPhone: '+g('phone')+'\nProject type: '+g('type')+'\n\n'+g('message');
-    location.href='mailto:sales@example.com?subject='+encodeURIComponent('Fire pump enquiry – '+g('company'))+'&body='+encodeURIComponent(body);
+    location.href='mailto:sales@example.com?subject='+encodeURIComponent('NM Fire Pumps Bangladesh enquiry – '+g('company'))+'&body='+encodeURIComponent(body);
   });
 })();
